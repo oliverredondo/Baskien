@@ -11,13 +11,16 @@ body {
   color: black;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
 }
 
 .site-title {
   font-size: 2rem;
+  font-family: "harri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .nav ul {
@@ -26,12 +29,24 @@ body {
   list-style: none;
   display: flex;
   gap: 1rem;
+  font-family: "harri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .nav a {
   color: inherit;
   text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
 }
 
 .nav li.active {
+  background-color: red;
+}
+
+.nav li:hover {
+  background-color: blue;
 }

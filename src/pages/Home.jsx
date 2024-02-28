@@ -1,5 +1,5 @@
 import React from "react";
-import "./LandingComponent.css";
+import "./Home.css";
 import { FiBook } from "react-icons/fi";
 import { AiOutlineCar } from "react-icons/ai";
 import { PiSunglasses } from "react-icons/pi";
@@ -7,7 +7,7 @@ import { PiSunglasses } from "react-icons/pi";
 
 
 
-const LandingComponent = () => {
+const Home = () => {
   return (
     <div className="wrapper">
   
@@ -48,4 +48,4 @@ const LandingComponent = () => {
   );
 };
 
-export default LandingComponent;
+export default Home;
