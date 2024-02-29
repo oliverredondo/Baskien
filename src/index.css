@@ -15,21 +15,76 @@ h1 {
   font-style: normal;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* Pop up */
+
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 250px;
+  transform: translate(-50%, -50%);
+  background-color: #1f4021;
+  border: 1px solid #1f4021;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Place the overlay behind the popup */
+}
+
+.popup-heading {
+  font-size: 0.8rem;
+  color: rgb(246, 246, 246);
+  margin-top: 50px;
+}
+
+.popup-content {
+  text-align: center;
+  color: white;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-close {
+  background-color: #c8c8c8eb;
+  color: #000000;
+  border: none;
+  padding: 5px 15px;
   cursor: pointer;
-  transition: border-color 0.25s;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
-button:hover {
-  border-color: #646cff;
+
+/* Style the close button */
+.popup-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  margin-top: 10px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.popup-button:hover {
+  background-color: white;
+  color: black;
 }

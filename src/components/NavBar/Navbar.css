@@ -50,3 +50,39 @@ body {
 .nav li:hover {
   background-color: blue;
 }
+
+.toggle-button {
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav li {
+    text-align: center;
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+}

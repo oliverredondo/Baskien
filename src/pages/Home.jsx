@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
+import Popup from "../components/popup/Popup"
 import { FiBook } from "react-icons/fi";
 import { AiOutlineCar } from "react-icons/ai";
 import { PiSunglasses } from "react-icons/pi";
@@ -29,21 +31,30 @@ const Home = () => {
         Get ready to embark on your Basque adventure.
       </p>
       <section className="options">
+            
             <div className="option">
+            <Link to="/history">
             <FiBook size={70}/>
 
             History
+            </Link>
             </div>
+            
             <div className="option">
+            <Link to="/practical-information">
             <AiOutlineCar size={70}/>
             Practical info
+            </Link>
             </div>
             <div className="option">
+            <Link to="/what-to-do">
             <PiSunglasses size={70}/>
 
             What to do
+            </Link>
             </div>
       </section>
+      <Popup />
     </div>
   );
 };
