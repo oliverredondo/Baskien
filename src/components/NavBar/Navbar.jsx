@@ -10,7 +10,7 @@ export default function Navbar() {
       };
 
     return (
-        <nav className="nav">
+        <nav className="nav" role="navigation">
             <Link to="/" className="site-title">Baskien</Link>
             <GiHamburgerMenu
                 className="toggle-button"

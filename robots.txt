@@ -1,0 +1,4 @@
+﻿User-agent: *
+Disallow: /history
+Disallow: /practical-information
+Disallow: /what-to-do
